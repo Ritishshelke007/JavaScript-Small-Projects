@@ -1,1 +1,1 @@
-# JavaScript-Small-Projects
+**Learning JavaScript with small projects**
