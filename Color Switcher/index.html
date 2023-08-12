@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
     <title>Color Switcher</title>
 
     <style>
@@ -42,13 +41,12 @@
         cursor: pointer;
       }
 
-      .rstBtn{
+      .rstBtn {
         display: flex;
         justify-content: center;
-
       }
 
-      .reset{
+      .reset {
         padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
@@ -57,7 +55,7 @@
   </head>
 
   <body>
-    <h1 style="text-align: center;">Choose a color</h1>
+    <h1 style="text-align: center">Choose a color</h1>
     <div class="spans">
       <span class="btn" id="grey"></span>
       <span class="btn" id="red"></span>
@@ -65,37 +63,35 @@
       <span class="btn" id="cyan"></span>
     </div>
     <div class="rstBtn">
-        <button class="reset">Reset</button>
+      <button class="reset">Reset</button>
     </div>
-
   </body>
   <script>
-    const buttons = document.querySelectorAll('.btn');
+    const buttons = document.querySelectorAll(".btn");
 
-    const body = document.querySelector('body');
+    const body = document.querySelector("body");
 
-    const resetBtn = document.querySelector('.reset');
+    const resetBtn = document.querySelector(".reset");
 
-    buttons.forEach((btn)=>{
-        btn.addEventListener('click',(e)=>{
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        if (e.target.id === "grey") {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === "red") {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === "yellow") {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === "cyan") {
+          body.style.backgroundColor = e.target.id;
+        }
+      });
+    });
 
-            if (e.target.id==='grey') {
-                body.style.backgroundColor = e.target.id;
-            }
-            if (e.target.id==='red') {
-                body.style.backgroundColor = e.target.id;
-            }
-            if (e.target.id==='yellow') {
-                body.style.backgroundColor = e.target.id;
-            }
-            if (e.target.id==='cyan') {
-                body.style.backgroundColor = e.target.id;
-            }
-        })
-    })
-
-    resetBtn.addEventListener('click',(e)=>{
-        body.style.backgroundColor = 'white';
-    })
+    resetBtn.addEventListener("click", (e) => {
+      body.style.backgroundColor = "white";
+    });
   </script>
 </html>
