@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.time{
+    padding: 30px;
+    text-align: center;
+    background-color: yellow;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    font-weight: 900;
+}
