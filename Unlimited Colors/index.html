@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Unlimited Colors</title>
+  </head>
+  <body class="bg-gray-600">
+    <div class="min-h-screen flex flex-col justify-center items-center text-black text-xl font-semibold">
+        <div>
+            <button class="px-14 py-5  bg-orange-400 m-10 rounded-full shadow-xl" id="start">Start</button>
+      
+            <button class="px-14 py-5 rounded-full bg-orange-400 m-10 shadow-xl" id="stop">Stop</button>
+        </div>
+
+        <div id="hexColor" class="bg-slate-50 px-10 py-4 rounded-lg shadow-xl cursor-pointer m-10">
+          Hex code
+        </div>
+
+        <div>
+            <button class="px-10 py-5 bg-orange-400 rounded-full shadow-xl" id="reset">Reset</button>
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
